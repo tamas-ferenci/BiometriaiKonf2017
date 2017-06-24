@@ -8,6 +8,10 @@ institute:
   - $^2$Szent Imre Egyetemi Oktatókórház, Angiológiai Osztály
 date: '2017\. június 9\.'
 output:
+  slidy_presentation:
+    keep_md: true
+    toc: true
+    df_print: kable
   beamer_presentation:
     toc: true
     df_print: kable

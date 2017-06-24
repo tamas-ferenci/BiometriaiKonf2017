@@ -65,12 +65,14 @@ plot( Predict( fit.para, fun = exp100k, Year, Month = 6 ), ylim = c( 18, 25 ) )
 ## Nemparaméteres vs. paraméteres: szempontok a választáshoz
 
 - Illeszkedés jósága vs. takarékosság (és ebből adódóan: becsülhetőség, általánosítóképesség)
+<div class="kable-table">
 
-```
-##    Függvényforma df $\\chi^2$      AIC
-## 1 Nemparaméteres 31  102725.1 16160.11
-## 2    Paraméteres 22  102686.2 16181.01
-```
+Függvényforma     df   $\chi^2$        AIC
+---------------  ---  ---------  ---------
+Nemparaméteres    31   102725.1   16160.11
+Paraméteres       22   102686.2   16181.01
+
+</div>
 - Klinikai interpretálhatóság
 - Időbeli extrapolálhatóság
 
@@ -123,13 +125,15 @@ plot( Predict( fit.spline, fun = exp100k, Year, Month = 6 ), ylim = c( 18, 25 ) 
 ## Összehasonlítás
 
 - Illeszkedés jósága vs. takarékosság
+<div class="kable-table">
 
-```
-##    Függvényforma df $\\chi^2$      AIC
-## 1 Nemparaméteres 31  102725.1 16160.11
-## 2         Spline 25  102709.8 16163.42
-## 3    Paraméteres 22  102686.2 16181.01
-```
+Függvényforma     df   $\chi^2$        AIC
+---------------  ---  ---------  ---------
+Nemparaméteres    31   102725.1   16160.11
+Spline            25   102709.8   16163.42
+Paraméteres       22   102686.2   16181.01
+
+</div>
 - Klinikai interpretálhatóság
 - Időbeli extrapolálhatóság
 
